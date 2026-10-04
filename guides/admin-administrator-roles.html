@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeJAVU — Administrator Roles &amp; Security Groups</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <a class="brand" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
+                    <polygon points="50,5 95,50 50,95 5,50" fill="#00A0AF" />
+                    <polygon points="50,5 72.5,27.5 50,50 27.5,27.5" fill="#285F74" opacity="0.8" />
+                </svg>
+                <h1>DeJAVU <span>Admin Guide</span></h1>
+            </a>
+            <button type="button" class="pdf-btn" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+    </div>
+
+    <article class="guide">
+        <header class="guide-header">
+            <p class="eyebrow">Admin guide</p>
+            <span class="audience">Audience · Administrator</span>
+            <h2>Administrator Roles &amp; Security Groups</h2>
+            <p class="lede">
+                Create roles, tick the permissions (capabilities) each role can use, assign those roles
+                to administrators, and use Security Groups when an enterprise admin should only see
+                some organisations. Pair this with
+                <a href="admin-creating-administrators.html">Creating Administrators</a>
+                when you need contact details and sample accounts.
+            </p>
+            <p class="portal-link">Path:
+                <strong>People → Administrators</strong>
+                (on <strong>Junior Achievement Africa</strong>, then switch into an org as needed)
+                · Docs:
+                <a href="https://support.betterimpact.com/en/articles/12752188-comprehensive-guide-to-administrator-profiles"
+                    target="_blank" rel="noopener noreferrer">BI administrator profiles</a>
+                ·
+                <a href="https://support.betterimpact.com/en/collections/10607753-administrator-profiles"
+                    target="_blank" rel="noopener noreferrer">Administrator Profiles collection</a>
+            </p>
+        </header>
+
+        <div class="steps">
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">1</div>
+                <h3 class="step-title">Roles vs Security Groups (what vs where)</h3>
+                <div class="step-body">
+                    <p>
+                        Keep these two tools separate. Mixing them up is the usual reason someone
+                        “has the wrong access.”
+                    </p>
+                    <p>
+                        <strong>Role</strong> — which menus and features they can open.
+                        Organisation Limited Admin Roles and Enterprise Configuration Admin Roles
+                        are checklists of capabilities.
+                    </p>
+                    <p>
+                        <strong>Security Group</strong> — which organisations an
+                        <em>Enterprise Security Group Admin</em> can see and work across
+                        (search, communicate, report). It does not replace a Limited role inside an org.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/diagram-roles-vs-security-groups.png"
+                                alt="Diagram showing roles control menus and Security Groups control organisations">
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Limited / Module / No System Access exist only inside an organisation.
+                        Security Groups and Configuration Admin Roles exist only at enterprise.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">2</div>
+                <h3 class="step-title">Open the Administrators menus</h3>
+                <div class="step-body">
+                    <p>
+                        Sign in to the <strong>Junior Achievement Africa</strong> enterprise.
+                        Go to <strong>People → Administrators</strong>.
+                    </p>
+                    <p>You should see:</p>
+                    <p><strong>Security Groups</strong> — named sets of organisations for enterprise admins.</p>
+                    <p><strong>Organisation Limited Admin Roles</strong> — shared Limited roles for every sub-account.</p>
+                    <p><strong>Enterprise Configuration Admin Roles</strong> — enterprise configuration checklists.</p>
+                    <p><strong>Enterprise Administrators</strong> — people with enterprise-level access.</p>
+                    <p><strong>Organisation Administrators</strong> — attach people to sub-accounts and set their org role.</p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-01-admin-menus.png"
+                                alt="People Administrators menu with Security Groups Limited Roles and Configuration Roles">
+                            <span class="mark-rect dark" style="--x: 14%; --y: 36%; --w: 18%; --h: 4%;"></span>
+                            <span class="callout dark" style="--x: 28%; --y: 30%;">Security Groups</span>
+                            <span class="mark-rect" style="--x: 14%; --y: 42%; --w: 18%; --h: 12%;"></span>
+                            <span class="callout" style="--x: 30%; --y: 48%;">Limited + Config roles</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Inside <strong>JA Africa Volunteer University</strong> the list is simpler:
+                        Add an Admin, Manage Administrators, and Limited Admin Roles (local roles only).
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">3</div>
+                <h3 class="step-title">Create an Organisation Limited Admin Role</h3>
+                <div class="step-body">
+                    <p>
+                        Use a Limited role when someone should only see some menus inside an organisation
+                        (for example Reporting Admin or Hours Reviewer).
+                    </p>
+                    <p>
+                        <strong>Path (shared for all orgs):</strong>
+                        People → Administrators → <strong>Organisation Limited Admin Roles</strong> →
+                        <strong>+ New Organisation Limited Admin Role</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-04-limited-role-saved.png"
+                                alt="Organisation Limited Admin Roles list with New Organisation Limited Admin Role button">
+                            <span class="callout" style="--x: 42%; --y: 50%;">Existing JA Africa roles</span>
+                            <span class="callout point-up" style="--x: 42%; --y: 78%;">New Organisation Limited Admin Role</span>
+                        </div>
+                    </div>
+                    <p>On the new-role form:</p>
+                    <p><strong>1.</strong> Enter a clear <strong>Role</strong> name and optional description.</p>
+                    <p><strong>2.</strong> Tick the <strong>Module(s)</strong> (usually Volunteer; add Administrator if they need admin profiles).</p>
+                    <p><strong>3.</strong> Tick the <strong>Capabilities</strong> (menu pages) they may use. Use Show All / Select All, then untick what they must not have.</p>
+                    <p><strong>4.</strong> Click <strong>Save</strong>.</p>
+                    <p class="aside">
+                        JA Africa already has Country Admin, Recruitment Admin / Safeguarding Reviewer,
+                        Reporting Admin, Communications, and Super Admin on this list.
+                        A Limited admin can hold only <strong>one</strong> Limited role at a time.
+                        Roles created here are available in every sub-account; roles created inside one org
+                        (People → Limited Admin Roles while switched into that org) stay local.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">4</div>
+                <h3 class="step-title">Create an Enterprise Configuration Admin Role (permissions)</h3>
+                <div class="step-body">
+                    <p>
+                        Use this when an enterprise person should only change selected configuration
+                        (branding, news, qualifications, surveys, and so on) — not Full Enterprise access.
+                    </p>
+                    <p>
+                        <strong>Path:</strong> People → Administrators →
+                        <strong>Enterprise Configuration Admin Roles</strong> →
+                        <strong>+ New Enterprise Configuration Admin Role</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-01-admin-menus.png"
+                                alt="Enterprise Configuration Admin Roles page with New Role button">
+                            <span class="callout point-up" style="--x: 48%; --y: 62%;">New Enterprise Configuration Admin Role</span>
+                        </div>
+                    </div>
+                    <p>
+                        Fill the form. The sample below is
+                        <em>DeJAVU Guide – Branding &amp; News</em> —
+                        Volunteer module, narrow configuration permissions only.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-02-config-role-form.png"
+                                alt="New Enterprise Configuration Admin Role form with modules and capabilities">
+                            <span class="callout" style="--x: 48%; --y: 22%;">Role name</span>
+                            <span class="mark-rect" style="--x: 42%; --y: 42%; --w: 28%; --h: 8%;"></span>
+                            <span class="callout dark" style="--x: 42%; --y: 34%;">Modules</span>
+                            <span class="mark-rect dark" style="--x: 48%; --y: 62%; --w: 40%; --h: 22%;"></span>
+                            <span class="callout point-up" style="--x: 48%; --y: 78%;">Capabilities (permissions)</span>
+                        </div>
+                    </div>
+                    <p>
+                        Tick only the configuration capabilities that person needs.
+                        Click <strong>?</strong> beside an option in Better Impact for a short description.
+                        Save, then confirm the role appears in the list.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-03-config-role-saved.png"
+                                alt="Saved Configuration Admin Role on the list">
+                            <span class="callout" style="--x: 42%; --y: 46%;">Saved role</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Full Enterprise Admins do not need a Configuration Admin Role — they already have every enterprise menu.
+                        Think of Configuration Admin Roles as the enterprise equivalent of Limited Admin Roles.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">5</div>
+                <h3 class="step-title">Create a Security Group</h3>
+                <div class="step-body">
+                    <p>
+                        A Security Group is a named list of organisations (often a region or programme cluster).
+                        You assign it to an enterprise admin whose type is
+                        <strong>Security Group</strong> so they only see those orgs at enterprise.
+                    </p>
+                    <p>
+                        <strong>Path:</strong> People → Administrators → <strong>Security Groups</strong> →
+                        <strong>+ New Security Group</strong> (or the + in the Security Group header).
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-01-admin-menus.png"
+                                alt="Administrators sidebar with Security Groups at the top of the list">
+                            <span class="mark-rect dark" style="--x: 14%; --y: 36%; --w: 18%; --h: 4%;"></span>
+                            <span class="callout dark" style="--x: 28%; --y: 30%;">Security Groups</span>
+                        </div>
+                    </div>
+                    <p>On the new Security Group form:</p>
+                    <p><strong>1.</strong> Enter a <strong>Security Group</strong> name (max 100 characters), for example <em>East Africa countries</em>.</p>
+                    <p><strong>2.</strong> Select the <strong>Module(s)</strong> that will use the group.</p>
+                    <p><strong>3.</strong> Tick the <strong>Organisation(s)</strong> that belong in the group
+                        (for example JA Africa Volunteer University plus country DeJAVU accounts).</p>
+                    <p><strong>4.</strong> Set email / note-log visibility options if shown, then <strong>Save</strong>.</p>
+                    <p class="aside">
+                        From the Security Groups list you can Options → View / Edit, Options → View Administrators
+                        in the group, or Delete (only if no administrators are still assigned to it).
+                    </p>
+                    <p class="aside">
+                        <strong>What Security Group Admins can do:</strong> search, communicate, and report
+                        across the organisations in their group.
+                        They cannot manage enterprise configuration, settings, or organisation-level data
+                        from the enterprise account. For day-to-day org menus they still need an organisation role
+                        after you attach them (steps 8–9).
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">6</div>
+                <h3 class="step-title">Assign a role when creating an Enterprise Administrator</h3>
+                <div class="step-body">
+                    <p>
+                        <strong>Path:</strong> People → Administrators → <strong>Enterprise Administrators</strong> →
+                        <strong>+ Create Enterprise Administrator</strong>
+                        (or Options → edit an existing row).
+                    </p>
+                    <p>Under <strong>Role</strong> choose one of:</p>
+                    <p><strong>Full Administrator</strong> — every enterprise feature (platform owners).</p>
+                    <p><strong>Security Group</strong> — then pick the Security Group from step 5 (controls <em>where</em>).</p>
+                    <p><strong>Configuration Admin</strong> — then pick a Configuration Admin Role from step 4 (controls <em>what</em>).</p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-04b-enterprise-admin-created.png"
+                                alt="Enterprise Administrators list showing Configuration Admin type on Guide EntAdmin">
+                            <span class="callout" style="--x: 55%; --y: 46%;">Type shows assigned role</span>
+                            <span class="callout point-up" style="--x: 42%; --y: 78%;">Create Enterprise Administrator</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        You can also <strong>+ Promote Account Administrator</strong> to lift an existing org admin
+                        to enterprise. Better Impact does not email the new password — share login details yourself.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">7</div>
+                <h3 class="step-title">When to use a Security Group (worked example)</h3>
+                <div class="step-body">
+                    <p>
+                        <strong>Example:</strong> A regional coordinator should search and report only for
+                        Rwanda and Volunteer University, not every DeJAVU country account.
+                    </p>
+                    <p><strong>1.</strong> Create Security Group <em>East Africa pilot</em> with those organisations (step 5).</p>
+                    <p><strong>2.</strong> Create or edit the enterprise admin → Role = <strong>Security Group</strong> → select <em>East Africa pilot</em> (step 6).</p>
+                    <p><strong>3.</strong> If they also need menus inside Volunteer University (hours, applicants, and so on),
+                        attach them as an organisation admin with a Limited or Full role (steps 8–9).</p>
+                    <p class="aside">
+                        Configuration Admin and Security Group solve different problems.
+                        One person is either Full, Security Group, or Configuration Admin at enterprise —
+                        pick the type that matches the job, then attach org roles when they need sub-account menus.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">8</div>
+                <h3 class="step-title">Attach an enterprise person to organisations and assign an org role</h3>
+                <div class="step-body">
+                    <p>
+                        An enterprise-only profile cannot open Volunteer University menus until you attach them
+                        and set an organisation type + role.
+                    </p>
+                    <p>
+                        <strong>Path:</strong> People → <strong>Organisation Administrators</strong> →
+                        search by username → Options → <strong>Manage … access</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-05-org-admin-search.png"
+                                alt="Find an Admin search by username">
+                            <span class="callout" style="--x: 55%; --y: 36%;">Search username</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-05b-manage-access.png"
+                                alt="Manage access dialog listing organisations with checkboxes">
+                            <span class="callout" style="--x: 50%; --y: 52%;">Tick organisations</span>
+                        </div>
+                    </div>
+                    <p>
+                        Tick the organisations, choose <strong>Add or Update Admin Role</strong>,
+                        set <strong>Type</strong> (Full, Limited, Module, or No System Access) and
+                        <strong>Role</strong> (if Limited), then Save.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-06-attach-org-role.png"
+                                alt="Add or Update Admin Role dialog with Type and Role">
+                            <span class="callout" style="--x: 55%; --y: 68%;">Type and role</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-07-access-attached.png"
+                                alt="Manage access showing Active status with Limited role on organisations">
+                            <span class="callout" style="--x: 62%; --y: 64%;">Active on orgs</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">9</div>
+                <h3 class="step-title">Assign a Limited role to an Organisation Administrator</h3>
+                <div class="step-body">
+                    <p>
+                        Switch into the organisation (Phase 1:
+                        <strong>JA Africa Volunteer University</strong>).
+                        <strong>Path:</strong> People → Administrators → <strong>Add an Admin</strong>
+                        (or Manage Administrators → Options → <strong>Update Administrator Role</strong>).
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-08-manage-org-admins.png"
+                                alt="Manage Administrators in JA Africa Volunteer University">
+                            <span class="callout" style="--x: 20%; --y: 33%;">Add an Admin</span>
+                            <span class="callout dark" style="--x: 20%; --y: 42%;">Limited Admin Roles</span>
+                        </div>
+                    </div>
+                    <p>
+                        Complete contact details, then under <strong>Settings → Administrator Role</strong>
+                        choose <strong>Type = Limited</strong> and pick the role (for example Country Admin
+                        or the guide sample Hours Reviewer). Adjust notification checkboxes, then Save.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-09-add-org-admin-form.png"
+                                alt="Add an Admin contact form">
+                            <span class="callout" style="--x: 55%; --y: 26%;">Contact details</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-10-org-admin-role.png"
+                                alt="Administrator Role Type Limited with role selected">
+                            <span class="mark-rect" style="--x: 48%; --y: 28%; --w: 36%; --h: 14%;"></span>
+                            <span class="callout" style="--x: 48%; --y: 18%;">Type + Role</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-administrator-roles/step-11-org-admins-list.png"
+                                alt="Manage Administrators list after assigning roles">
+                            <span class="callout" style="--x: 55%; --y: 56%;">Assigned admins</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        You can also promote a volunteer: open their profile → Main → Miscellaneous →
+                        Administrator → set Active, then Update Administrator Role.
+                        Always send them the admin login URL separately.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">10</div>
+                <h3 class="step-title">Quick chooser — which tool to use</h3>
+                <div class="step-body">
+                    <p><strong>Country staff with limited menus</strong> — Organisation Limited role (step 3) → assign on org admin (step 9).</p>
+                    <p><strong>Country staff who need every menu</strong> — Organisation Type = Full (step 9).</p>
+                    <p><strong>Regional owner of the whole platform</strong> — Enterprise Full Administrator (step 6).</p>
+                    <p><strong>Regional staff for some countries only</strong> — Security Group (steps 5–7) ± org Limited/Full attach (steps 8–9).</p>
+                    <p><strong>Someone who only maintains configuration</strong> — Configuration Admin Role (step 4) + enterprise type Configuration Admin (step 6).</p>
+                    <p class="aside">
+                        After you change a role’s capabilities, every admin who holds that role gets the new permissions.
+                        Review live roles carefully before editing Country Admin or Super Admin.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <aside class="help-block">
+            <h3>Encountering issues?</h3>
+            <p>
+                Missing menus → open the Limited or Configuration role and check the permissions.
+                Enterprise login but no Volunteer University menus → attach them under Organisation Administrators
+                and set an org Type/Role.
+                Cannot delete a Security Group → remove all administrators from that group first.
+                Organisation Administrators menu missing → ask Better Impact support to enable it for the enterprise.
+                Contact the Digital team before changing Full Enterprise or Super Admin on a live account.
+            </p>
+        </aside>
+    </article>
+
+    <footer class="page-footer">
+        Project DeJAVU · JA Africa Regional Volunteer Platform ·
+        <a href="index.html">Back to guides</a>
+    </footer>
+
+</body>
+
+</html>
