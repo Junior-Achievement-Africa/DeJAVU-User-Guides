@@ -43,7 +43,7 @@
                 <strong>People → Administrators</strong>
                 · Docs:
                 <a href="https://support.betterimpact.com/en/articles/12752188-comprehensive-guide-to-administrator-profiles"
-                    target="_blank" rel="noopener noreferrer">BI administrator profiles</a>
+                    target="_blank" rel="noopener noreferrer">Administrator profiles (platform help)</a>
             </p>
         </header>
 
@@ -53,24 +53,24 @@
                 <div class="step-num" aria-hidden="true">1</div>
                 <h3 class="step-title">Admin types and what they can do</h3>
                 <div class="step-body">
-                    <p><strong>Organisation-level roles</strong> (used inside a sub-account such as JA Africa Volunteer University):</p>
-                    <p><strong>Full</strong> — All menus and features in that organisation. No menu restrictions.</p>
-                    <p><strong>Limited</strong> — Only the menus allowed by a Limited Admin Role (what they can do). Does not limit which volunteers they see.</p>
-                    <p><strong>Module</strong> — Access only to selected modules (Volunteer, Client, Donor, Member). No fine-grained menu checklist like Limited.</p>
-                    <p><strong>No System Access</strong> — Profile exists for contact / notifications only; they cannot use the admin menus.</p>
+                    <p><strong>Organisation-level roles</strong> (inside an organisation account such as JA Africa Volunteer University):</p>
+                    <p><strong>Full</strong> — All menus in that organisation.</p>
+                    <p><strong>Limited</strong> — Only menus allowed by a named Limited role (for example Country Admin). Does not limit which volunteers they can see.</p>
+                    <p><strong>Module</strong> — Access to one broad area (usually Volunteer profiles) without a custom permission list.</p>
+                    <p><strong>No System Access</strong> — Contact record only; they cannot open admin menus.</p>
                     <p><strong>Enterprise-level roles</strong> (Junior Achievement Africa umbrella):</p>
                     <p><strong>Full Enterprise Admin</strong> — Full enterprise features, including managing organisation admins (when enabled), Security Groups, and Configuration Admin Roles.</p>
                     <p><strong>Enterprise Security Group Admin</strong> — Limited to the organisations in the assigned Security Group(s) — controls <em>where</em>.</p>
-                    <p><strong>Enterprise Configuration Admin</strong> — Configuration menus only, as defined by a Configuration Admin Role — controls <em>what</em>. Upgraded enterprises only.</p>
+                    <p><strong>Enterprise Configuration Admin</strong> — Settings menus only, as set by a Configuration Admin Role — controls <em>what</em> they may change.</p>
                     <p class="aside">
-                        <strong>Roles vs Security Groups:</strong> Configuration / Limited roles = what menus.
-                        Security Groups = which organisations. Limited / Module / No System Access do not exist at enterprise level.
+                        <strong>Roles vs Security Groups:</strong> Limited / Configuration roles = which menus.
+                        Security Groups = which organisations. Full, Limited, Module, and No System Access do not apply at enterprise level.
                     </p>
                     <p class="aside">
-                        <strong>JA Africa default:</strong> Day-to-day country work uses organisation admins on
-                        <strong>JA Africa Volunteer University</strong> (often Full or Limited roles such as Country Admin).
-                        Enterprise Full is for regional platform owners. Sample guide accounts below use Configuration Admin
-                        and Limited Hours Reviewer so you can see restricted options without changing production config.
+                        <strong>JA Africa default:</strong> Day-to-day work uses organisation admins on
+                        <strong>JA Africa Volunteer University</strong> (often Full or Limited, such as Country Admin).
+                        Enterprise Full is for regional platform owners. Sample accounts below use Configuration Admin
+                        and Limited Hours Reviewer so you can practise without changing live settings.
                     </p>
                 </div>
             </section>
@@ -89,7 +89,7 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-01-admin-menus.png"
                                 alt="People Administrators menu with Enterprise Configuration Admin Roles selected">
-                            <span class="callout" style="--x: 20%; --y: 38%;">Administrators</span>
+                            <span class="callout" style="--x: 18%; --y: 41.5%;">Administrators</span>
                         </div>
                     </div>
                     <p>
@@ -109,26 +109,26 @@
                     </p>
                     <p>
                         <strong>Sample role:</strong> <em>DeJAVU Guide – Branding &amp; News</em> —
-                        Volunteer module; branding / news style capabilities only (for the guide).
-                        Do not use this sample role for live production staff without reviewing capabilities.
+                        Volunteer profiles; branding and news permissions only (for the guide).
+                        Do not assign this sample role to live staff without reviewing permissions.
                     </p>
                     <div class="shot">
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-02-config-role-form.png"
                                 alt="New Enterprise Configuration Admin Role form for Branding and News">
-                            <span class="callout" style="--x: 48%; --y: 26%;">Role name</span>
+                            <span class="callout" style="--x: 46%; --y: 11.5%;">Role name</span>
                         </div>
                     </div>
                     <div class="shot">
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-03-config-role-saved.png"
                                 alt="Saved Configuration Admin Role list showing Branding and News">
-                            <span class="callout" style="--x: 42%; --y: 46%;">Saved role</span>
+                            <span class="callout" style="--x: 42%; --y: 16.5%;">Saved role</span>
                         </div>
                     </div>
                     <p class="aside">
-                        <strong>Other BI options:</strong> Tick Administrator and/or Volunteer modules; pick only the
-                        configuration capabilities that person needs (custom fields, qualifications, regions, surveys, and so on).
+                        You can also mix Administrator and Volunteer modules and pick only the settings permissions needed
+                        (custom fields, qualifications, regions, surveys, and so on).
                         Full Enterprise Admins do not need a Configuration Admin Role.
                     </p>
                 </div>
@@ -141,7 +141,7 @@
                     <p>
                         <strong>Path (enterprise):</strong> People → Administrators → Organisation Limited Admin Roles →
                         <strong>+ New Organisation Limited Admin Role</strong>.
-                        Roles created here are available to every sub-account.
+                        Roles created here are available to every organisation account.
                     </p>
                     <p>
                         <strong>Sample role:</strong> <em>DeJAVU Guide – Hours Reviewer</em> —
@@ -151,14 +151,14 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-04-limited-role-saved.png"
                                 alt="Organisation Limited Admin Roles list including Hours Reviewer">
-                            <span class="callout" style="--x: 42%; --y: 50%;">Hours Reviewer</span>
+                            <span class="callout" style="--x: 40%; --y: 31.5%;">Hours Reviewer</span>
                         </div>
                     </div>
                     <p class="aside">
                         <strong>JA Africa defaults already on the list:</strong> Country Admin, Recruitment Admin / Safeguarding Reviewer,
                         Reporting Admin, Communications, Super Admin.
-                        <strong>Other BI options:</strong> Create roles at enterprise (shared) or inside one organisation’s
-                        People → Limited Admin Roles (local only). A Limited Admin can only have one Limited role at a time.
+                        Create roles at enterprise (shared) or inside one organisation’s
+                        People → Limited Admin Roles (local only). A Limited admin can only have one Limited role at a time.
                     </p>
                 </div>
             </section>
@@ -184,13 +184,13 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-04b-enterprise-admin-created.png"
                                 alt="Enterprise Administrators list with Guide EntAdmin Configuration Admin created successfully">
-                            <span class="callout" style="--x: 55%; --y: 46%;">Sample enterprise admin</span>
+                            <span class="callout" style="--x: 36%; --y: 51%;">Sample enterprise admin</span>
                         </div>
                     </div>
                     <p class="aside">
-                        <strong>Other BI options:</strong> Full Administrator; Security Group + group name; or promote an existing
+                        You can also choose Full Administrator, Security Group + group name, or promote an existing
                         organisation admin with <strong>+ Promote Account Administrator</strong>.
-                        Share login details manually — Better Impact does not email the new password for you.
+                        Share login details manually — the portal does not email the new password.
                     </p>
                 </div>
             </section>
@@ -200,7 +200,7 @@
                 <h3 class="step-title">Attach the enterprise admin to organisation accounts</h3>
                 <div class="step-body">
                     <p>
-                        An enterprise-only profile cannot work inside a sub-account until you attach them.
+                        An enterprise-only profile cannot work inside an organisation account until you attach them.
                         <strong>Path:</strong> People → Organisation Administrators → search by username →
                         Options → <strong>Manage … access</strong>.
                     </p>
@@ -208,18 +208,18 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-05-org-admin-search.png"
                                 alt="Find an Admin search for dejavuguide.entadmin">
-                            <span class="callout" style="--x: 55%; --y: 36%;">Search username</span>
+                            <span class="callout point-up" style="--x: 44.5%; --y: 44.5%;">Search username</span>
                         </div>
                     </div>
                     <div class="shot">
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-05b-manage-access.png"
                                 alt="Manage Guide access dialog listing organisations">
-                            <span class="callout" style="--x: 50%; --y: 52%;">Tick organisations</span>
+                            <span class="callout" style="--x: 45%; --y: 28%;">Select organisations</span>
                         </div>
                     </div>
                     <p>
-                        Tick the organisations (example: <strong>JA Africa Volunteer University</strong> and
+                        Select the organisations (example: <strong>JA Africa Volunteer University</strong> and
                         <strong>DeJAVU – Rwanda</strong>), choose <strong>Add or Update Admin Role</strong>,
                         set Type (for example Limited) and Role (for example Hours Reviewer), then Save.
                     </p>
@@ -227,14 +227,14 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-06-attach-org-role.png"
                                 alt="Add or Update Admin Role dialog for Guide EntAdmin">
-                            <span class="callout" style="--x: 55%; --y: 68%;">Type and role</span>
+                            <span class="callout" style="--x: 38%; --y: 47%;">Type and role</span>
                         </div>
                     </div>
                     <div class="shot">
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-07-access-attached.png"
                                 alt="Manage access showing Hours Reviewer Active on Rwanda and Volunteer University">
-                            <span class="callout" style="--x: 62%; --y: 64%;">Active on orgs</span>
+                            <span class="callout" style="--x: 70%; --y: 66%;">Active on orgs</span>
                         </div>
                     </div>
                     <p class="aside">
@@ -257,7 +257,7 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-08-manage-org-admins.png"
                                 alt="Manage Administrators in JA Africa Volunteer University">
-                            <span class="callout" style="--x: 20%; --y: 33%;">Add an Admin</span>
+                            <span class="callout" style="--x: 16%; --y: 42.5%;">Add an Admin</span>
                         </div>
                     </div>
                     <p>
@@ -269,14 +269,14 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-09-add-org-admin-form.png"
                                 alt="Add an Admin contact form filled for Guide OrgAdmin">
-                            <span class="callout" style="--x: 55%; --y: 26%;">Contact details</span>
+                            <span class="callout" style="--x: 55%; --y: 16%;">Contact details</span>
                         </div>
                     </div>
                     <div class="shot">
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-10-org-admin-role.png"
                                 alt="Administrator Role set to Limited Hours Reviewer">
-                            <span class="callout" style="--x: 48%; --y: 30%;">Limited + role</span>
+                            <span class="callout" style="--x: 62%; --y: 48%;">Limited + role</span>
                         </div>
                     </div>
                     <p>
@@ -287,11 +287,11 @@
                         <div class="shot-frame">
                             <img src="assets/admin-creating-administrators/step-11-org-admins-list.png"
                                 alt="Manage Administrators list including Guide EntAdmin and Guide OrgAdmin">
-                            <span class="callout" style="--x: 55%; --y: 56%;">Both sample admins</span>
+                            <span class="callout" style="--x: 48%; --y: 76%;">Both sample admins</span>
                         </div>
                     </div>
                     <p class="aside">
-                        <strong>Other BI options:</strong> Promote a volunteer to administrator from their profile
+                        You can also promote a volunteer to administrator from their profile
                         (Main → Miscellaneous → Administrator), or change role later via Options → Update Administrator Role.
                         You can also archive or remove admins from Manage Administrators.
                     </p>
@@ -302,12 +302,12 @@
 
         <aside class="help-block">
             <h3>Encountering issues?</h3>
-            <p>
-                Confirm you are in the right account (enterprise vs organisation).
-                Enterprise-only profiles are not editable from a sub-account until you attach them via Organisation Administrators.
-                If Organisation Administrators is missing, ask Better Impact support to enable it for the enterprise.
-                Contact the Digital team for help with live access changes.
-            </p>
+            <ul>
+                <li>Confirm you are in the right account (enterprise vs organisation).</li>
+                <li>Enterprise-only profiles are not editable from an organisation account until you attach them via Organisation Administrators.</li>
+                <li>If Organisation Administrators is missing, ask platform support to enable it for the enterprise.</li>
+                <li>Contact the Digital team for help with live access changes.</li>
+            </ul>
         </aside>
     </article>
 

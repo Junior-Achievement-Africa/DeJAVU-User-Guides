@@ -372,6 +372,20 @@ h1, h2, h3 {
     color: var(--body-muted);
 }
 
+.help-block ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--body-muted);
+}
+
+.help-block li {
+    margin: 0 0 6px;
+}
+
+.help-block li:last-child {
+    margin-bottom: 0;
+}
+
 .page-footer {
     text-align: center;
     padding: 28px 24px 40px;
