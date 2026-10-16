@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeJAVU — Scheduled Hours Reminders</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <a class="brand" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
+                    <polygon points="50,5 95,50 50,95 5,50" fill="#00A0AF" />
+                    <polygon points="50,5 72.5,27.5 50,50 27.5,27.5" fill="#285F74" opacity="0.8" />
+                </svg>
+                <h1>DeJAVU <span>Admin Guide</span></h1>
+            </a>
+            <button type="button" class="pdf-btn" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+    </div>
+
+    <article class="guide">
+        <header class="guide-header">
+            <p class="eyebrow">Admin guide</p>
+            <span class="audience">Audience · Administrator</span>
+            <h2>Scheduled Emails — Hours Logging Reminders</h2>
+            <p class="lede">
+                After you create an opportunity, schedule an email to go out on its
+                <strong>end date</strong> reminding assigned volunteers to log any remaining hours.
+                Use a recipient search that targets people <strong>assigned</strong> to that
+                opportunity with <strong>hours logged ≤ 0</strong> (or below your threshold).
+                The recipient list is rebuilt at send time, so only people who still match receive it.
+                Pair this with
+                <a href="admin-opportunity-creation.html">Creating Opportunities</a>.
+            </p>
+            <p class="portal-link">Path:
+                <strong>Communicate → Email → Scheduled Emails</strong>
+                · Docs:
+                <a href="https://support.betterimpact.com/en/articles/12916303-comprehensive-guide-to-communications"
+                    target="_blank" rel="noopener noreferrer">Communications (platform help)</a>
+            </p>
+        </header>
+
+        <div class="steps">
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">1</div>
+                <h3 class="step-title">Open Scheduled Emails</h3>
+                <div class="step-body">
+                    <p>
+                        Switch into <strong>JA Africa Volunteer University</strong> (or the org that owns
+                        the opportunity). Click <strong>Communicate</strong>, then under
+                        <strong>Email</strong> choose <strong>Scheduled Emails</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-01-communicate-scheduled-emails.png"
+                                alt="Communicate sidebar with Scheduled Emails under Email">
+                            <span class="mark-rect" style="--x: 5.5%; --y: 33.6%; --w: 7.8%; --h: 2.6%;"></span>
+                            <span class="callout dark" style="--x: 10%; --y: 25.4%;">Scheduled Emails</span>
+                            <span class="mark-circle oval" style="--x: 20.2%; --y: 3.1%; --w: 4.8%; --h: 8.2%;"></span>
+                            <span class="callout point-up" style="--x: 20.2%; --y: 10.6%;">Communicate</span>
+                        </div>
+                    </div>
+                    <p class="callout-list">
+                        <span>Create the reminder in the same org as the opportunity</span>
+                        <span>Full admins can manage any pending scheduled email</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">2</div>
+                <h3 class="step-title">Start a new scheduled email</h3>
+                <div class="step-body">
+                    <p>
+                        On the Scheduled Emails list, click
+                        <strong>+ Create Scheduled Email</strong> (top or bottom of the list).
+                        Use Filters later to find Pending, Sent, Canceled, or Failed items.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-02-scheduled-emails-list.png"
+                                alt="Scheduled Emails list with Create Scheduled Email button">
+                            <span class="mark-rect" style="--x: 21.2%; --y: 49.9%; --w: 11.2%; --h: 3.4%;"></span>
+                            <span class="callout point-up" style="--x: 21.2%; --y: 58%;">Create Scheduled Email</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Scheduled emails must stay <strong>Pending</strong> until send time.
+                        Once Sent, Canceled, or Failed, they cannot be edited.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">3</div>
+                <h3 class="step-title">Set name and send date (opportunity end date)</h3>
+                <div class="step-body">
+                    <p>
+                        In <strong>Settings</strong>, name the email so you can find it later
+                        (e.g. <em>Hours reminder — [Opportunity Name]</em>). Add an optional
+                        internal description.
+                    </p>
+                    <p>
+                        Set <strong>Send Date</strong> to the opportunity’s
+                        <strong>end date</strong> (from
+                        <a href="admin-opportunity-creation.html">Creating Opportunities</a>),
+                        and choose a morning time such as <strong>09:00</strong> so volunteers
+                        still have the day to log hours.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-03-create-settings-send-date.png"
+                                alt="Create Scheduled Email settings with name and send date">
+                            <span class="mark-rect" style="--x: 51%; --y: 41.7%; --w: 33%; --h: 3.4%;"></span>
+                            <span class="callout" style="--x: 51%; --y: 35.4%;">Name</span>
+                            <span class="mark-rect dark" style="--x: 38.6%; --y: 60.6%; --w: 6.4%; --h: 3.8%;"></span>
+                            <span class="callout dark" style="--x: 38.6%; --y: 54.3%;">Send = end date</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Platform limit: you can only schedule between
+                        <strong>1 hour</strong> and <strong>30 days</strong> from when you save.
+                        If the opportunity ends more than 30 days out, create this reminder closer
+                        to the end date (or set a calendar note to come back).
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">4</div>
+                <h3 class="step-title">Write the subject and body</h3>
+                <div class="step-body">
+                    <p>
+                        In the <strong>Email</strong> section, enter a clear subject that names the
+                        opportunity. Optionally use an email template to pre-fill text (templates are
+                        copied in — later template edits do not change this scheduled email).
+                    </p>
+                    <p>
+                        Use <strong>+ FN</strong> / <strong>+ LN</strong> (or Insert → first/last name)
+                        so each volunteer sees their name. Attachments and read receipts are not
+                        available on scheduled emails.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-04-email-content.png"
+                                alt="Scheduled email subject and body editor">
+                            <span class="mark-rect" style="--x: 42.6%; --y: 54.1%; --w: 25%; --h: 3.6%;"></span>
+                            <span class="callout" style="--x: 38%; --y: 47.6%;">Subject</span>
+                            <span class="mark-rect dark" style="--x: 58.1%; --y: 54.2%; --w: 4.4%; --h: 3.2%;"></span>
+                            <span class="callout dark" style="--x: 62%; --y: 47.8%;">+ FN merge tag</span>
+                        </div>
+                    </div>
+                    <p class="callout-list">
+                        <span>Remind them the opportunity has ended</span>
+                        <span>Ask them to log all hours in DeJAVU if not done</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">5</div>
+                <h3 class="step-title">Target Volunteer module and build the search</h3>
+                <div class="step-body">
+                    <p>
+                        Under <strong>Modules</strong>, keep <strong>Volunteer</strong> checked
+                        (uncheck Administrator). Scroll to
+                        <strong>Recipient List Search</strong> and click
+                        <strong>Build Recipient List Search</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-05-modules-build-search.png"
+                                alt="Volunteer module checked and Build Recipient List Search button">
+                            <span class="mark-rect dark" style="--x: 43.8%; --y: 55.6%; --w: 7%; --h: 2.8%;"></span>
+                            <span class="callout dark" style="--x: 44%; --y: 49.2%;">Volunteer</span>
+                            <span class="mark-rect" style="--x: 35%; --y: 66.7%; --w: 12%; --h: 3.8%;"></span>
+                            <span class="callout point-up" style="--x: 35%; --y: 74.8%;">Build Recipient List Search</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        Optional: check <strong>CC me</strong> to receive a copy when it sends,
+                        and include the recipient list in that copy for audit.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">6</div>
+                <h3 class="step-title">Filter Accepted volunteers on the opportunity</h3>
+                <div class="step-body">
+                    <p>
+                        In the search dialog, check <strong>Volunteer → Accepted</strong>.
+                        Click <strong>+ Add Search Criteria</strong>, choose search type
+                        <strong>Activity</strong>, then check <strong>Assigned</strong>
+                        (confirmed and unconfirmed are fine).
+                    </p>
+                    <p>
+                        Under <strong>For the following activities</strong>, expand the category
+                        and tick the opportunity you just created (same name as in Manage Activities).
+                        Click <strong>Add</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-07-search-type-activity.png"
+                                alt="Add Search Criteria with Activity in Search Type list">
+                            <span class="mark-rect" style="--x: 47%; --y: 55.3%; --w: 25%; --h: 2.8%;"></span>
+                            <span class="callout" style="--x: 38%; --y: 49%;">Activity</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-08-activity-assigned.png"
+                                alt="Activity criteria with Assigned checked">
+                            <span class="mark-rect dark" style="--x: 52.4%; --y: 56.4%; --w: 20%; --h: 4.8%;"></span>
+                            <span class="callout dark" style="--x: 48%; --y: 49.8%;">Assigned</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-09-select-opportunity.png"
+                                alt="Activity list with specific opportunity checked">
+                            <span class="mark-rect" style="--x: 49.5%; --y: 65.5%; --w: 11%; --h: 2.8%;"></span>
+                            <span class="callout" style="--x: 49.5%; --y: 59%;">Your opportunity</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">7</div>
+                <h3 class="step-title">Limit to volunteers who have not logged hours</h3>
+                <div class="step-body">
+                    <p>
+                        Click <strong>+ Add Search Criteria</strong> again. Choose
+                        <strong>Hours Logged</strong>. Select
+                        <strong>is less than or equal to</strong> and enter <strong>0</strong>
+                        (or your programme’s minimum if you only want people under a target).
+                    </p>
+                    <p>
+                        Set <strong>Category</strong> and <strong>Activity</strong> to the same
+                        opportunity so the hours filter matches that activity only.
+                        Keep Match Type as <strong>Include people who match ALL of the above</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-11-hours-logged-filter.png"
+                                alt="Hours Logged criteria less than or equal to 0">
+                            <span class="mark-rect dark" style="--x: 38%; --y: 52%; --w: 16%; --h: 4.2%;"></span>
+                            <span class="callout dark" style="--x: 40%; --y: 45.5%;">≤ 0 Hours</span>
+                            <span class="mark-rect" style="--x: 54.5%; --y: 71.9%; --w: 33%; --h: 3.8%;"></span>
+                            <span class="callout" style="--x: 58%; --y: 63.7%;">Category · Online</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-12-both-criteria.png"
+                                alt="Both Activity and Hours Logged criteria with Use This Search">
+                            <span class="mark-rect" style="--x: 45%; --y: 39.2%; --w: 28%; --h: 6%;"></span>
+                            <span class="callout" style="--x: 56%; --y: 32.8%;">Both criteria</span>
+                            <span class="mark-rect dark" style="--x: 73.7%; --y: 77.6%; --w: 11.5%; --h: 3.4%;"></span>
+                            <span class="callout dark" style="--x: 73.7%; --y: 71.2%;">Use This Search</span>
+                        </div>
+                    </div>
+                    <p class="aside">
+                        The list is evaluated <strong>at send time</strong>. Volunteers who log hours
+                        before the send date drop out of the ≤ 0 filter and will not get the reminder.
+                        Use <strong>Preview Recipient List</strong> for a current snapshot only.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">8</div>
+                <h3 class="step-title">Attach the search and Save</h3>
+                <div class="step-body">
+                    <p>
+                        Click <strong>Use This Search</strong>. The create dialog shows a summary of
+                        the filters. Confirm Send Date, subject, and criteria, then click
+                        <strong>Save</strong>. The email appears on the list as <strong>Pending</strong>.
+                    </p>
+                    <div class="shot">
+                        <div class="shot-frame">
+                            <img src="assets/admin-scheduled-hours-reminders/step-13-search-attached-save.png"
+                                alt="Create dialog with recipient search summary and Save">
+                            <span class="mark-rect" style="--x: 46%; --y: 59.5%; --w: 30%; --h: 16%;"></span>
+                            <span class="callout" style="--x: 55%; --y: 45.2%;">Search attached</span>
+                            <span class="mark-rect dark" style="--x: 74.1%; --y: 74%; --w: 7.5%; --h: 3.4%;"></span>
+                            <span class="callout dark" style="--x: 74.1%; --y: 67.5%;">Save</span>
+                        </div>
+                    </div>
+                    <p class="callout-list">
+                        <span>Do this right after creating the opportunity (within 30 days of send)</span>
+                        <span>Use Replace Recipient List Search if the opportunity name changes</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">9</div>
+                <h3 class="step-title">Tie it to Creating Opportunities</h3>
+                <div class="step-body">
+                    <p>
+                        Recommended sequence when you launch a new opportunity:
+                    </p>
+                    <p>
+                        1. Create the opportunity in Manage Activities
+                        (<a href="admin-opportunity-creation.html">Creating Opportunities</a>).
+                    </p>
+                    <p>
+                        2. Note the <strong>end date</strong> from the schedule / Basic Info.
+                    </p>
+                    <p>
+                        3. Within 30 days of that end date, create this scheduled hours reminder
+                        with Send Date = end date and Activity = that opportunity.
+                    </p>
+                    <p>
+                        4. Optionally register the opportunity in the survey tracker
+                        (<a href="admin-surveys.html">Surveys — Volunteer Feedback</a>) so feedback
+                        still sends when volunteers reach target hours.
+                    </p>
+                    <p class="aside">
+                        Surveys reward people who have logged hours; this scheduled email nudges
+                        people who have not. Use both for a complete close-out.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <aside class="help-block">
+            <h3>Encountering issues?</h3>
+            <ul>
+                <li>Confirm you are in the same org as the opportunity (Volunteer University or country account).</li>
+                <li>If Save rejects the send date, it is outside the 1 hour–30 day window — schedule closer to the end date.</li>
+                <li>If nobody receives the email, check Email History, that the search used Assigned + Hours Logged on the correct activity, and that volunteers are Accepted with a valid email.</li>
+                <li>Recipient lists rebuild at send time — logging hours before send removes people from a ≤ 0 hours filter.</li>
+                <li>Contact the Digital team before canceling or editing live programme reminders.</li>
+            </ul>
+        </aside>
+    </article>
+
+    <footer class="page-footer">
+        Project DeJAVU · JA Africa Regional Volunteer Platform ·
+        <a href="index.html">Back to guides</a>
+    </footer>
+
+</body>
+
+</html>

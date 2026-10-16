@@ -39,6 +39,9 @@
                 are recorded automatically or entered by the volunteer. After you save, add the opportunity to the
                 DeJAVU hours tracker spreadsheet so feedback surveys can send when volunteers reach the target hours.
                 See <a href="admin-surveys.html">Surveys — Volunteer Feedback</a> to create a survey and copy its link.
+                Near the opportunity end date, also schedule a
+                <a href="admin-scheduled-hours-reminders.html">hours logging reminder</a>
+                for volunteers who have not logged yet.
             </p>
             <p class="portal-link">Path:
                 <strong>Configuration → Activities → Manage Activities → + New Activity</strong>
@@ -280,6 +283,28 @@
 
             <section class="step">
                 <div class="step-num" aria-hidden="true">7</div>
+                <h3 class="step-title">Schedule an hours logging reminder</h3>
+                <div class="step-body">
+                    <p>
+                        Within <strong>30 days</strong> of the opportunity end date, go to
+                        <strong>Communicate → Email → Scheduled Emails</strong> and create a reminder
+                        with <strong>Send Date</strong> = that end date. Target volunteers
+                        <strong>Assigned</strong> to this opportunity whose
+                        <strong>Hours Logged</strong> are still ≤ 0.
+                    </p>
+                    <p>
+                        Full walkthrough:
+                        <a href="admin-scheduled-hours-reminders.html">Scheduled Emails — Hours Logging Reminders</a>.
+                    </p>
+                    <p class="aside">
+                        The survey tracker emails people who <em>have</em> reached target hours.
+                        The scheduled reminder nudges people who have <em>not</em> logged yet.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step">
+                <div class="step-num" aria-hidden="true">8</div>
                 <h3 class="step-title">Switch acceptance or hours later</h3>
                 <div class="step-body">
                     <p>
@@ -310,6 +335,7 @@
                 <li>If Save stays disabled, complete required schedule times and visit every tab.</li>
                 <li>If volunteers cannot see the opportunity, check Active status, Visible to + If Qualified, and that Safeguarding is Passed on their profile.</li>
                 <li>If surveys are not sending after target hours, confirm the tracker row exists, the Activity Name matches exactly, and start/end dates cover the hours logged.</li>
+                <li>If an hours reminder cannot be saved, the send date may be outside the 1 hour–30 day window — schedule closer to the end date.</li>
                 <li>Contact the Digital team before bulk-changing live programme opportunities.</li>
             </ul>
         </aside>
